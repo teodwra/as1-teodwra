@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="claybrook.css">
+
+    <link rel="stylesheet" href="desktop.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="sitereport.css" media="screen and (min-width: 800px)">
+    <link rel="stylesheet" href="sitereportmobile.css" media="screen and (max-width: 800px)">
+
+</head>
+
+<body id="clicked">
+    <header>
+        <a class="showNav on" href="#clicked"></a>
+        <a class="showNav off" href="#"></a>
+        <div class="header-title">
+            <h1>TEODORA CONDURACHE 24806377</h1>
+
+        </div>
+    </header>
+
+
+
+
+
+
+    <nav class="nav-links">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="project.html">PROJECT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="videoDemo.html">VIDEO</a></li>
+            <li><a href="sitereport.html">SITE REPORT</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="div1">
+
+    </div>
+
+    <main>
+        <h2 class="h2home">HOME PAGE</h2>
+
+        <p class="homepage">On the home page, I used Picrew to create a cartoon version of my profile picture. The fade
+            animation on the left with the title “Portfolio Website,” smoothly changes opacity using the @keyframes
+            vignette-anim CSS animation. This animation makes the element fade slightly in and out by setting its
+            opacity to 1 at the start and end while lowering it to 0.7 in the middle, creating this visual effect.
+            The navigation bar is styled with a dark purple background and white borders (border: 2px solid white). The
+            text is centered using text-align: center and displayed in a monospace font (font-family: 'Courier New',
+            Courier, monospace). I removed bullet points from the list items with list-style-type: none and used
+            overflow: hidden to ensure everything stays contained. To make the navigation interactive, I added a hover
+            effect (.nav-links a:hover), which changes the background color to a darker shade when the user hovers over
+            a link.
+            For the title, I used an italic serif font with a shadow effect to make it stand out. I also added a
+            transition effect (transition: 700ms ease) so that when hovered, the letter spacing and font weight change
+            smoothly (letter-spacing: 1px; font-variation-settings: "wght" 582). The title bar is fixed at the top
+            (position: fixed; width: 100%; z-index: 2000), ensuring it remains visible while scrolling, making
+            navigation easier.
+            Before starting to work on this page, I have made a visual PowerPoint slide to get an idea of how I would
+            like the site to look like, making CSS styling easier.
+        </p>
+
+        <h2 class="h2contact">CONTACT PAGE</h2>
+
+        <p class="contactpage">
+            On the contact page, I kept the design consistent with the rest of the site while adding new elements for
+            user interaction. The navigation bar remained the same, styled with a dark purple background and white
+            borders. The title section also follows the same format, with an italic serif font, a subtle text shadow,
+            and a smooth transition effect when hovered.
+            To provide easy access to my contact links, I created a hyperlink list with no bullet points using the same
+            technique which was used in my navigation bar. Each item is displayed inline (display: inline-block) with
+            padding for spacing. The hover effect (.linklist a:hover { background-color: #33233f; }) darkens the
+            background when hovering over a link to make navigating through the hyperlinks easier. I also included a
+            form and messagebox, using CSS grids: (display: grid; grid-template-columns: auto 1fr;), making sure labels
+            and input fields are aligned. I experimented with different border shapes (border radius), being circular,
+            star and rounded edges. For the contact page I also created a PowerPoint page to get an idea of what I would
+            like the CSS to turn out like.
+
+        </p>
+
+        <h2 class="h2project">PROJECT PAGE</h2>
+        <p class="projectpage">
+            Project
+            I used a CSS Grid to organize the content into two columns, to arrange text and images side by side. The
+            navigation bar stays consistent with the rest of the site. It’s positioned at the top with position:
+            absolute; to keep it fixed in place. The main text sections (.para1, .para2, .para3) have a soft purple
+            background and a solid border to stand out. I set a max-width to keep the text from stretching too wide and
+            added word-wrap: break-word; so it is easier to read. Images are placed using position: absolute;, with
+            specific margins to align them properly around the text. Some images are centered, while others are
+            positioned to the sides for balance.
+        </p>
+
+        <h2 class="h2errors">Errors I Encountered</h2>
+        <p class="errors">At first, I didn’t use CSS Grid or the
+            main tag on the project page, which made organizing content and optimizing for mobile more difficult.
+            Because
+            of this, I had to restart the page and restructure it. After implementing Grid and main, I was able to
+            make it look similar to the original design while improving layout control.
+            I also hadn’t used main tags on any of the pages initially, but after adding them, everything worked
+            fine. The rest of the pages didn’t require major changes, and the structure remained consistent
+            across the site.
+            During mobile optimization, the hamburger menu worked fine without any animations. However, when I
+            added a navigation bar animation, it caused the three lines of the hamburger icon to shrink down to
+            just two. This issue likely happened because the animation affected the display or height of the
+            icon’s elements, causing them to overlap or disappear.
+            For mobile optimization, I used a grid layout to structure the page and make it responsive. The
+            navigation menu is hidden off-screen (right: -100%) and slides in when activated, creating a smooth
+            transition. The hamburger icon is styled with border-top to form the lines, and I used :target to
+            toggle visibility. Text and other elements are adjusted for smaller screens to improve readability
+            and layout.
+        </p>
+
+        <div class="hpimage"><img src="pictures/pp2.png" alt="pw3" width="600"></div>
+        <div class="contactpimage1"><img src="pictures/pp1.png" alt="pw3" width="600"></div>
+        <div class="contactpimage2"><img src="pictures/star.png" alt="pw3" width="200"></div>
+        <div class="validationimg"><img src="pictures/validation.png" alt="pw3" width="400"></div>
+
+
+        <h2 class="referencing">Referencing</h2>
+        <ul class="referencelinks">
+            <li><a href="https://codepen.io/mimikos/pen/QMjjzy">Animation</a>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">General values used</a>
+            <li><a href="https://codepen.io/DuskoStamenic/pen/QWaoBPY">Header Title</a>
+        </ul>
+
+        <h2 class="validation">Validation</h2>
+
+
+    </main>
+
+</body>
+
+</html>

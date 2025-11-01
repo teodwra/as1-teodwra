@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(69, 45, 81), rgb(48, 10, 45), rgb(69, 48, 78));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+body .header-title {
+    font-size: 1.25em;
+    text-align: center;
+    color: rgb(139, 99, 138);
+    padding: 15px;
+    width: 100%;
+}
+
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+
+body .contactme {
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(235, 163, 243);
+    margin-top: 30px;
+    font-family: monospace;
+    text-shadow: 4px 4px 2px rgb(42, 22, 48);
+    
+}
+
+.linklist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.linklist a {
+    background-color: #875c99;
+    color: rgb(0, 0, 0);
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 85%;
+    text-align: center;
+}
+
+.inputform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.inputform label {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.inputform input,
+.inputform textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.inputform input[type="submit"] {
+    background-color: #5c2054;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.inputform input[type="submit"]:hover {
+    background-color: #42123C;
+}
+
+.icon1, .icon2, .icon3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.icon1 img, .icon2 img, .icon3 img {
+    width: 45px;
+    margin: 5px;
+}
+
+.bgimage, .catimage {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bgimage img, .catimage img {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+

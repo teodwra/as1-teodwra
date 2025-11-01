@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(33, 10, 35);
+    border: 2px solid white;
+}
+
+
+.pw {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    background-color: #42123C;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.nav-links a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-links a:hover {
+    background-color: #1f071c;
+}
+
+.nav-links li {
+    float: left;
+    margin: 0 3em;
+
+}
+
+nav {
+    display: block;
+    margin-top: 4.5em;
+    padding-top: 4.5em;
+
+}
+
+.image1 {
+    margin-left: 23em;
+    margin-bottom: -5em;
+    position: absolute;
+    top: 15em;
+    border: 2px solid rgb(255, 255, 255);
+    opacity: 1;
+}
+
+
+.div1 {
+    background-color: rgb(33, 10, 35);
+    color: white;
+    padding-top: 60em;
+    border: 2px solid white;
+
+}
+
+aside {
+    background-color: lightgreen;
+}
+
+.header-title {
+    line-height: 5em;
+    font-style: italic;
+    margin: 0;
+    line-height: 5em;
+    text-align: center;
+    font-family: 'Gambetta', serif;
+    color: black;
+    padding-bottom: 2em;
+    margin-top: -0.5em;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    text-shadow: 3px 4px 6px #42123C;
+    border: 2px solid white;
+
+}
+
+.header-title:hover {
+    font-variation-settings: "wght" 582;
+    letter-spacing: 1px;
+}
+
+.header-title {
+    background-color: rgb(38, 25, 44);
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 2em;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main-para {
+    color: rgb(0, 0, 0);
+    background-color: #776089;
+    margin-left: 40em;
+    margin-right: 20em;
+    margin-bottom: -5em;
+    position: absolute;
+    top: 15em;
+    font-size: 20px;
+    border: 10px solid rgb(67, 39, 101);
+}
+
+
+.contactme {
+    color: rgb(107, 76, 123);
+    margin-left: 13.5em;
+    margin-top: -10em;
+    position: absolute;
+    top: 15em;
+    opacity: 1;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 4px 3px 5px #a38bda;
+}
+
+.linklist {
+    color: #ffffff;
+    margin-left: 14em;
+    margin-top: 0em;
+    position: absolute;
+    top: 15em;
+    opacity: 1;
+    font-size: 25px;
+    list-style-type: none;
+    background-color: #776089;
+    overflow: hidden;
+    padding-left: 2em;
+
+}
+
+.linklist li {
+    display: inline-block;
+    padding: 1em;
+}
+
+.linklist a:hover{
+    background-color: #33233f;
+
+}
+
+.linklist a{
+    color: white;
+    text-decoration: none;
+}
+
+.inputform {
+    color: rgb(158, 105, 185);
+    margin-left: 58em;
+    margin-top: 38em;
+    position: absolute;
+    top: 15em;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    row-gap: 0.5em;
+    width: 400px;
+}
+
+input[type="submit"] {
+    grid-column: 2;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.3em 0.5em;
+    width: 400px;
+  }
+
+  .textbox{
+    margin-left: 6em;
+    margin-top: -37em;
+    margin-bottom: 20em;
+    position: absolute;
+    top: 15em;
+    width: 24em;
+    height: 20em;
+  }
+  
+  .icon1{
+    background-color: #ffffff;
+    margin-left: 36.5em;
+    margin-top: 15em;
+    position: absolute;
+    top: 15em;
+    border: 5px solid #776089;
+  }
+
+  .icon2{
+    background-color: #ffffff;
+    margin-left: 47em;
+    margin-top: 15em;
+    position: absolute;
+    top: 15em;
+    border: 5px solid #776089;
+  }
+
+  .icon3{
+    background-color: #ffffff;
+    margin-left: 26em;
+    margin-top: 15em;
+    position: absolute;
+    top: 15em;
+    border: 5px solid #776089;
+  }
+
+  .bgimage img{
+    border-radius: 50%;
+    margin-left: 65em;
+    margin-top: 2em;
+    position: absolute;
+    top: 15em;
+  }
+
+  .catimage img{
+    border-radius: 50%;
+    margin-left: 30em;
+    margin-top: 25em;
+    position: absolute;
+    top: 15em;
+  }
+
+  
+
+
+
+  

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="claybrook.css">
+
+    <link rel="stylesheet" href="desktop.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="project.css" media="screen and (min-width: 800px)">
+    <link rel="stylesheet" href="projectmobile.css" media="screen and (max-width: 800px)">
+
+</head>
+
+<body id="clicked">
+    <header>
+        <a class="showNav on" href="#clicked"></a>
+        <a class="showNav off" href="#"></a>
+    </header>
+
+
+
+
+    <div class="header-title">
+        <h1>TEODORA CONDURACHE 24806377</h1>
+
+    </div>
+
+    <nav class="nav-links">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="project.html">PROJECT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="videoDemo.html">VIDEO</a></li>
+            <li><a href="sitereport.html">SITE REPORT</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="div1">
+
+    </div>
+    <main class="container">
+        <div class="image1"><img src="pictures/la.jpg" alt="pw3" width="250"></div>
+        <div class="image3"><img src="pictures/la2.jpg" alt="pw3" width="250"></div>
+        <div class="image2"><img src="pictures/la4.jpg" alt="pw3" width="400"></div>
+
+
+
+        <p class="para1">///PLACEHOLDER TEXT WITH PLACEHOLDER PICTURES// TEXT FROM PROBLEM SOLVING AND PROGRAMMING
+            MODULE///Task Requirements:
+            - Ask the user to enter a value of lightyears (LY)
+            - Convert the entered value of LY to kilometres (KM)
+            - Result displayed in the terminal/console
+            - After displaying result, program should ask user if they would like to perform the operation again
+            - If user agrees loop should repeat, if not the program should terminate
+            - Formula for converting lightyears to kilometres is: km = ly/.000000000000010570
+
+            Analysis:
+            The conversion factor from light years to kilometers is defined by the conversion constant, km_to_ly.
+
+            Input Loop: Requests user input repeatedly using a while True loop.
+
+            Validation of User Input: Asks for a positive float input and determines whether it is greater than 0.
+
+            Conversion & Output: Shows the outcome after converting light years to kilometers.
+
+            Repeat Prompt: Inquires if the user would like to carry out the action once more. The loop repeats if "yes";
+            otherwise, it terminates.
+
+            Error Handling: Notifies the user to provide a valid number after detecting invalid inputs (numeric or ≤ 0).
+
+
+            Design:
+            START
+            SET conversion constant km_to_ly to 0.00000000000010570
+            WHILE the program keeps running:
+            TRY to execute:
+            TAKE INPUT from the user to enter a value for light years (as a number)
+            CONVERT the user's input to a float
+            IF the input is greater than 0:
+            CALCULATE the corresponding kilometers by dividing lightyears by km_to_ly
+            DISPLAY the result: "Lightyears to Kilometers: [kilometers]"
+            ASK the user if they want to perform the operation again (yes/no)
+            IF the response is no:
+            BREAK the loop and terminate the program
+            ELSE IF the input is less than or equal to 0:
+            DISPLAY "Please enter a number greater than 0"
+            CATCH an invalid input (ValueError):
+            DISPLAY "Please enter a valid number"
+            END
+        </p>
+
+        <p class="para2">///PLACEHOLDER TEXT WITH PLACEHOLDER PICTURES// TEXT FROM PROBLEM SOLVING AND PROGRAMMING
+            MODULE///Implementation:
+
+            """
+            The code below takes an input from the user for a number of light years as a float format/datatype and
+            accepts it if the input is greater than 0, if it is not it asks the user to re-enter
+            an input which is greater than 0 in a while loop, if the user's input is greater than 0 the input is
+            accepted and the program calculates the value of kilometers by dividing the user's input
+            by the set value which light years is defined. The program then asks the user if they would like to repeat
+            the process with a given choice of yes or no, if the user's input is "yes" then
+            the program will start again from the beginning and the loop will repeat until the condition is met, asking
+            the user to enter an input of light years, if the user's input is no the program
+            will terminate.
+            """
+
+            import os
+            os.system('cls') #clears terminal window
+
+            km_to_ly = 0.00000000000010570 #constant variable that holds value of conversion from km to ly
+
+            while True: #while loop that continues until condition is met
+            try:
+            lightyears = float(input("Enter a value of light years: ")) #takes a user input of float datatype
+            if lightyears > 0: #checks if value is greater than 0
+            kilometers = lightyears / km_to_ly #converts input light years to kilometers
+            print("Lightyears to Kilometers:", kilometers) #prints out converted input
+            repeat = input("Would you like to perform the operation again (yes/no): ") #asks user if they would like to
+            perform another conversion
+            if repeat.lower() != "yes": #if user inputs anything other than yes the loop will break, otherwise it will
+            loop again
+            break
+            else:
+            print("Please enter a number greater than 0") #if user input is 0 or less than 0, it will ask for another
+            input greater than 0
+            except ValueError:
+            print("Please enter a valid number") #if it is not a valid number it will catch the error
+        </p>
+
+        <p class="para3">///PLACEHOLDER TEXT WITH PLACEHOLDER PICTURES// TEXT FROM PROBLEM SOLVING AND PROGRAMMING
+            MODULE///START
+            DEFINE function check_ac_uk that takes a string input:
+            SET substring to ".ac.uk"
+            IF the last 6 characters of the string match the substring:
+            RETURN True
+            ELSE:
+            RETURN False
+
+            IF the program is run directly:
+            IMPORT doctest for testing purposes
+            RUN doctest.testmod() to check the function with example inputs
+
+            WHILE the program keeps running:
+            ASK the user to enter an input string
+            CALL check_ac_uk with the user's input and store the result in content
+            OUTPUT the result of content (True or False)
+            END
+
+            Implementation:
+
+            TESTING:
+            CODE:
+            #task 1 b
+            """
+            The code below is a defined function which takes a string input from the user in a string variable and is
+            passed inside of the function's parameters, the substring variable is defined with the
+            value of the string ".ac.uk". The if statement checks if the user's input's last 6 characters end with
+            ".ac.uk", if so the program returns true, otherwise it returns false.
+            """
+            .</p>
+    </main>
+
+
+
+</body>
+
+</html>

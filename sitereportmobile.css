@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(69, 45, 81), rgb(48, 10, 45), rgb(69, 48, 78));
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "nav" "main" "footer";
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+h2 {
+    font-size: 1.5em;
+    color: rgb(235, 163, 243);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+ul.referencelinks {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.referencelinks a {
+    text-decoration: none;
+    color: #875c99;
+    font-size: 1.1em;
+    margin: 10px;
+}
+
+.contactpimage1 img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.hpimage img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+}
+.validation {
+    position: absolute;
+    margin-top: -14em;
+    margin-left: 10em;
+}
